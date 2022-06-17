@@ -1,4 +1,4 @@
-#include "new.h"
+#include "holberton.h"
 
 /**
  * _strcat -concatenates two strings
@@ -11,15 +11,18 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int dest_len = strlen(dest);
-	int i;
+	int len = 0;
+	char *cpy;
 
-	for (i = 0 ; i < n && src[i] != '\0' ; i++)
-		dest[dest_len + i] = src[i];
-	dest[dest_len + i] = '\0'
+	for (; dest[len] != '\0'; len++);
+
+	cpy = dest + len;
+	while (*src != '\0')
+		*cpy++ = *src++;
+	*cpy = '\0';
 
 
-		return dest;
+		return (des)t;
 	
 }
 
